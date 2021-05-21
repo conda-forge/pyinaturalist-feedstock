@@ -1,6 +1,6 @@
 {% set name = "pyinaturalist" %}
-{% set version = "0.12.1" %}
-{% set hash_val = "87ec38f4e5df7caae943ce071e0d38db7c70385492487c18ed1c6f66fa50bfd4" %}
+{% set version = "0.13.0" %}
+{% set hash_val = "65c89cada23f116cf721e9ef45c064fd9942cd2b73138fd3d2e23c9df2814e19" %}
 
 
 package:
@@ -19,12 +19,14 @@ build:
 requirements:
   host:
     - python >=3.6
+    - poetry
     - pip
   run:
     - python >=3.6
-    - keyring ~=21.4.0
+    - keyring >=22.3
+    - pyrate-limiter >=2.3.3
     - python-dateutil >=2.0
-    - python-forge
+    - python-forge >=18.6.0
     - requests >=2.20
 
 test:
@@ -32,8 +34,8 @@ test:
     - pyinaturalist
   requires:
     - pip
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
 
 about:
   home: https://github.com/niconoe/pyinaturalist
