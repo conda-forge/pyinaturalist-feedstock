@@ -1,6 +1,6 @@
 {% set name = "pyinaturalist" %}
-{% set version = "0.14.1" %}
-{% set hash_val = "0ac8681d7adff74676cdb073db79a769febe01a32f85ec0b3ed3855c7623fa54" %}
+{% set version = "0.15.0" %}
+{% set hash_val = "a31f1280acead75a6d13823436ef4f56edeb5bc79cd8f79e9622b6fcc3045309" %}
 
 
 package:
@@ -23,17 +23,20 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - appdirs >=1.4
     - attrs >=21.2
     - keyring >=22.3
-    - pyrate-limiter >=2.3.3
     - python-dateutil >=2.0
     - python-forge >=18.6.0
     - requests >=2.20
+    - requests-cache >=0.7.4
+    - requests-ratelimiter >=0.2
     - rich >=10.0
 
 test:
   imports:
     - pyinaturalist
+    - pyinaturalist.controllers
     - pyinaturalist.docs
     - pyinaturalist.models
     - pyinaturalist.v0
