@@ -1,6 +1,6 @@
 {% set name = "pyinaturalist" %}
-{% set version = "0.15.0" %}
-{% set hash_val = "a31f1280acead75a6d13823436ef4f56edeb5bc79cd8f79e9622b6fcc3045309" %}
+{% set version = "0.16.0" %}
+{% set hash_val = "7db536d89d62297efb2b4cb357f851050cdee41d9b8e58092bbc5ba29c556f84" %}
 
 
 package:
@@ -31,7 +31,7 @@ requirements:
     - requests >=2.20
     - requests-cache >=0.7.4
     - requests-ratelimiter >=0.2
-    - rich >=10.0
+    - rich >=10.0,<10.12
 
 test:
   imports:
