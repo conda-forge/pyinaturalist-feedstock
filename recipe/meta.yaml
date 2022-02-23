@@ -31,7 +31,7 @@ requirements:
     - requests >=2.20
     - requests-cache >=0.7.4
     - requests-ratelimiter >=0.2
-    - rich >=10.0
+    - rich >=10.0,<10.12
 
 test:
   imports:
