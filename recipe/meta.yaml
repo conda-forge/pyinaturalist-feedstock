@@ -1,6 +1,6 @@
 {% set name = "pyinaturalist" %}
-{% set version = "0.16.0" %}
-{% set hash_val = "7db536d89d62297efb2b4cb357f851050cdee41d9b8e58092bbc5ba29c556f84" %}
+{% set version = "0.17.0" %}
+{% set hash_val = "c7cc2caad5a6f30f89822399333bdadcf902d901b34f93a829e7266ff34ab70a" %}
 
 
 package:
@@ -18,20 +18,20 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - poetry
     - pip
   run:
-    - python >=3.6
-    - appdirs >=1.4
+    - python >=3.7
     - attrs >=21.2
     - keyring >=22.3
+    - platformdirs >=2.5
     - python-dateutil >=2.0
-    - python-forge >=18.6.0
-    - requests >=2.20
-    - requests-cache >=0.7.4
-    - requests-ratelimiter >=0.2
-    - rich >=10.0,<10.12
+    - python-forge >=18.6
+    - requests >=2.25
+    - requests-cache >=1.0
+    - requests-ratelimiter >=0.3.2
+    - rich >=10.0
 
 test:
   imports:
