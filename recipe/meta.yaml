@@ -1,6 +1,6 @@
 {% set name = "pyinaturalist" %}
-{% set version = "0.16.0" %}
-{% set hash_val = "7db536d89d62297efb2b4cb357f851050cdee41d9b8e58092bbc5ba29c556f84" %}
+{% set version = "0.17.0" %}
+{% set hash_val = "c7cc2caad5a6f30f89822399333bdadcf902d901b34f93a829e7266ff34ab70a" %}
 
 
 package:
