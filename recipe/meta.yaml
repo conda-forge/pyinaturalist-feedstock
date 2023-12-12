@@ -1,6 +1,6 @@
 {% set name = "pyinaturalist" %}
-{% set version = "0.18.0" %}
-{% set hash_val = "4a2a2cd2e274b39520d88cc0c8bb357755fac386838efa07b7e02dc9d859dd75" %}
+{% set version = "0.19.0" %}
+{% set hash_val = "cfe90a8ad579339f9d527e09f630f1ed0f1a43d9c5429f58f970ee294f053f73" %}
 
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
