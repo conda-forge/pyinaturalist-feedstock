@@ -8,21 +8,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - poetry
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - attrs >=21.2
     - keyring >=22.3
     - platformdirs >=2.5
@@ -44,6 +44,7 @@ test:
     - pyinaturalist.v2
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
