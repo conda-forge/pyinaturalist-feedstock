@@ -1,6 +1,7 @@
 {% set name = "pyinaturalist" %}
-{% set version = "0.19.0" %}
-{% set hash_val = "cfe90a8ad579339f9d527e09f630f1ed0f1a43d9c5429f58f970ee294f053f73" %}
+{% set version = "0.20.0" %}
+{% set hash_val = "177477b9954955aff22fce726b7eb52dcd584e85299a49d50f67c8edf5fc9ce6" %}
+{% set python_min = "3.8" %}
 
 
 package:
@@ -27,10 +28,9 @@ requirements:
     - keyring >=22.3
     - platformdirs >=2.5
     - python-dateutil >=2.0
-    - python-forge >=18.6
     - requests >=2.25
-    - requests-cache >=1.0
-    - requests-ratelimiter >=0.3.2
+    - requests-cache >=1.2
+    - requests-ratelimiter >=0.5.1
     - rich >=10.0
 
 test:
@@ -45,16 +45,14 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-  commands:
-    - pip check
 
 about:
-  home: https://github.com/niconoe/pyinaturalist
+  home: https://github.com/pyinat/pyinaturalist
   summary: Python API client for iNaturalist
   license: MIT
   license_file: LICENSE
-  doc_url: https://pyinaturalist.readthedocs.io/
-  dev_url: https://github.com/niconoe/pyinaturalist
+  doc_url: https://pyinaturalist.readthedocs.io
+  dev_url: https://github.com/pyinat/pyinaturalist
 
 extra:
   recipe-maintainers:
