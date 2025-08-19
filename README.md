@@ -3,15 +3,15 @@ About pyinaturalist-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyinaturalist-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/niconoe/pyinaturalist
+Home: https://github.com/pyinat/pyinaturalist
 
 Package license: MIT
 
 Summary: Python API client for iNaturalist
 
-Development: https://github.com/niconoe/pyinaturalist
+Development: https://github.com/pyinat/pyinaturalist
 
-Documentation: https://pyinaturalist.readthedocs.io/
+Documentation: https://pyinaturalist.readthedocs.io
 
 Current build status
 ====================
